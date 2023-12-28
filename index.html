@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="assets/images/logo_quran.png">
+    <meta property="og:title" content="المكتبة الصوتية للقرآن الكريم - تصفح واستماع وتحميل">
+    <meta property="og:title" content="المكتبة الصوتية للقرآن الكريم - تصفح واستماع وتحميل">
+    <meta name="twitter:title" content="المكتبة الصوتية للقرآن الكريم - تصفح واستماع وتحميل">
+    <meta name="description" content="<p><br></p>">
+    <meta property="og:description" content="<p><br></p>">
+    <meta name="twitter:description" content="<p><br></p>">
+
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta property="og:locale" content="ar">
+    <meta property="og:type" content="">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>قرآن</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+
+<body>
+
+    <div class="loader">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="34px" height="40px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;"
+            xml:space="preserve">
+            <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0s" dur="0.8s"
+                    repeatCount="indefinite" />
+                <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0s" dur="0.8s"
+                    repeatCount="indefinite" />
+                <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0s" dur="0.8s"
+                    repeatCount="indefinite" />
+            </rect>
+            <rect x="8" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.15s" dur="0.8s"
+                    repeatCount="indefinite" />
+                <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.15s" dur="0.8s"
+                    repeatCount="indefinite" />
+                <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.15s" dur="0.8s"
+                    repeatCount="indefinite" />
+            </rect>
+            <rect x="16" y="10" width="4" height="10" fill="#333" opacity="0.2">
+                <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.3s" dur="0.8s"
+                    repeatCount="indefinite" />
+                <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.3s" dur="0.8s"
+                    repeatCount="indefinite" />
+                <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.3s" dur="0.8s"
+                    repeatCount="indefinite" />
+            </rect>
+        </svg>
+    </div>
+
+    <header id="#top">
+
+        <nav class="main-navigation navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo_quran.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Swar">استعراض السور</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Live">بث مباشر</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="main-banner change-name" id="Swar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-text">
+                        <h4>رحله طيبه</h4>
+                        <h2>في رحاب <em>القرآن الكريم</em></h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="search-form">
+                        <div class="row justify-content-around">
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="recitersSelect" class="form-label">اختر القارئ</label>
+                                    <select class="form-select" id="recitersSelect">
+                                        <option selected>اختر</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="novelsSelect" class="form-label">اختر روايه</label>
+                                    <select name="Price" class="form-select" id="novelsSelect">
+                                        <option selected>اختر</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <label for="surahSelect" class="form-label">اختر السوره</label>
+                                    <select name="Plan" class="form-select" id="surahSelect">
+                                        <option selected>اختر</option>
+
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+
+                                <audio style="width: 100%;" controls>
+                                    <source src="" type="audio/ogg">
+                                    Your browser does not support the audio element.
+                                </audio>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="contact-us" id="Live">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>اختر قناة البث المباشر</h2>
+                    <span class="white-button">
+                        <a href="javascript:void()"
+                            onclick="playLive('https://win.holol.com/live/quran/playlist.m3u8')">قناة القرآن الكريم</a>
+                    </span>
+                    <span class="white-button">
+                        <a href="javascript:void()"
+                            onclick="playLive('https://win.holol.com/live/sunnah/playlist.m3u8')">قناة السنه النبويه</a>
+                    </span>
+                    <video class="mt-2" width="100%" height="100%" controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <div class="about-widget">
+                        <img src="assets/images/logo_quran.png" class="w-50">
+                        <h5>
+                            تم تصميم وبرمجة هذا الموقع كصدقة جارية ومنفعة تعود بالخير على كل مستخدم يمر به<br> يُقدَّم هذا العمل الجليل تكريمًا لذكرى روح جدي
+                            وجدتي، رحمهما الله وأسكنهما الفردوس الأعلى
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="follow-us">
+                        <h4>تابعني</h4>
+                        <ul class="social-links">
+                            <li class="mx-2">
+                                <a href="https://m.facebook.com/3Dawyatt" target="_blank">
+                                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://api.whatsapp.com/send?phone=00201095358487" target="_blank">
+                                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://www.linkedin.com/in/ahmedaladawy/" target="_blank">
+                                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://github.com/3Dawyat" target="_blank">
+                                    <i class="fa-brands fa-github fa-2xl"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="https://3dawyat.github.io/Portfolio.github.io/" target="_blank">
+                                    <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <div class="row text-center">
+                            <div class="col-lg-12">
+                                <p>جميع الحقوق محفوظه لدي المهندس أحمد العدوي © 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <script src="assets/js/site.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader').fadeToggle();
+        }, 1500);
+
+        $("a[href='#top']").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>
